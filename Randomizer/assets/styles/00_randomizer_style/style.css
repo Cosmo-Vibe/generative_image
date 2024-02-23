@@ -1,0 +1,71 @@
+/* General body styling for better aesthetics */
+body {
+    font-family: 'Arial', sans-serif; /* Sets a clean, readable font */
+    background-color: #f0f0f0; /* Light grey background for contrast */
+    color: #333; /* Dark grey text for readability */
+    margin: 0;
+    padding: 20px; /* Adds some padding around the content */
+}
+
+/* Wrapper for centering and max-width control */
+.wrapper {
+    max-width: 600px; /* Maximum width of the content */
+    margin: 0 auto; /* Center align the content */
+}
+
+/* Center alignment for div elements */
+.center {
+    text-align: center;
+}
+
+/* Styling for all buttons */
+button {
+    background-color: #007bff; /* Primary blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    margin: 10px 5px; /* Margin around the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    font-size: 16px; /* Larger font size for better readability */
+    width: 100%; /* Full width for smaller screens */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* Styling for the selectors (animal part controls) */
+#controls label {
+    display: block; /* Each label takes a full row on smaller screens */
+    margin: 10px 0; /* Adds space around each label */
+}
+
+#controls select {
+    padding: 5px;
+    width: 100%; /* Full width for smaller screens */
+    border-radius: 4px; /* Rounded corners for selectors */
+    border: 1px solid #ddd; /* Light grey border */
+    background-color: white; /* White background */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+/* Random style for the download button */
+#downloadButton {
+    background-color: #28a745; /* Green background */
+    /* Other styles are inherited from the general button styling */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    button, #controls select {
+        width: auto; /* Auto width for larger screens */
+    }
+
+    #controls label {
+        display: inline-block; /* Aligns labels in a line on larger screens */
+    }
+}
